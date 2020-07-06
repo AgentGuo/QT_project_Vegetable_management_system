@@ -1,0 +1,7 @@
+﻿  mainwindow.cpp
+mainwindow.cpp(272): warning C4100: “a”: 未引用的形参
+mainwindow.cpp(282): warning C4100: “a”: 未引用的形参
+mainwindow.cpp(289): warning C4100: “a”: 未引用的形参
+mainwindow.cpp(370): warning C4100: “pos”: 未引用的形参
+  Table.vcxproj -> D:\QT_project\Table - 副本\X64\Debug\Table.exe
+  Table.vcxproj -> D:\QT_project\Table - 副本\X64\Debug\Table.pdb (Full PDB)

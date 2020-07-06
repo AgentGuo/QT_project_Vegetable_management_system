@@ -1,0 +1,406 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|X64">
+      <Configuration>Debug</Configuration>
+      <Platform>X64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|X64">
+      <Configuration>Release</Configuration>
+      <Platform>X64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{0E081548-7D30-3457-A3A4-DE9D7D12D224}</ProjectGuid>
+    <RootNamespace>Table</RootNamespace>
+    <Keyword>Qt4VSv1.0</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <PlatformToolset>v140</PlatformToolset>
+    <OutputDirectory>release\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>release\</IntermediateDirectory>
+    <PrimaryOutput>Table</PrimaryOutput>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|X64'" Label="Configuration">
+    <PlatformToolset>v140</PlatformToolset>
+    <OutputDirectory>release\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>release\</IntermediateDirectory>
+    <PrimaryOutput>Table</PrimaryOutput>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <PlatformToolset>v140</PlatformToolset>
+    <OutputDirectory>debug\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>debug\</IntermediateDirectory>
+    <PrimaryOutput>Table</PrimaryOutput>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|X64'" Label="Configuration">
+    <PlatformToolset>v140</PlatformToolset>
+    <OutputDirectory>debug\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>debug\</IntermediateDirectory>
+    <PrimaryOutput>Table</PrimaryOutput>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|X64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|X64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Table</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|X64'">Table</TargetName>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</IgnoreImportLibrary>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Release|X64'">true</IgnoreImportLibrary>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|X64'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Table</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|X64'">Table</TargetName>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</IgnoreImportLibrary>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Debug|X64'">true</IgnoreImportLibrary>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;..\..\QT\5.9.9\MSVC2015_64\include;..\..\QT\5.9.9\MSVC2015_64\include\QtWidgets;..\..\QT\5.9.9\MSVC2015_64\include\QtGui;..\..\QT\5.9.9\MSVC2015_64\include\QtANGLE;..\..\QT\5.9.9\MSVC2015_64\include\QtCore;release;.;..\..\QT\5.9.9\MSVC2015_64\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>release\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <DisableSpecificWarnings>4577;4467;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>release\</ObjectFileName>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;QT_DEPRECATED_WARNINGS;QT_NO_DEBUG;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <ProgramDataBaseFileName>
+      </ProgramDataBaseFileName>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>D:\QT\5.9.9\MSVC2015_64\lib\qtmain.lib;shell32.lib;D:\QT\5.9.9\MSVC2015_64\lib\Qt5Widgets.lib;D:\QT\5.9.9\MSVC2015_64\lib\Qt5Gui.lib;D:\QT\5.9.9\MSVC2015_64\lib\Qt5Core.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:\QT\5.9.9\MSVC2015_64\lib;C:\openssl\lib;C:\Utils\my_sql\my_sql\lib;C:\Utils\postgresql\pgsql\lib;$(QTDIR)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>"/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <LinkIncremental>false</LinkIncremental>
+      <OutputFile>$(OutDir)\Table.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;QT_DEPRECATED_WARNINGS;QT_NO_DEBUG;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|X64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;..\..\QT\5.9.9\MSVC2015_64\include;..\..\QT\5.9.9\MSVC2015_64\include\QtWidgets;..\..\QT\5.9.9\MSVC2015_64\include\QtGui;..\..\QT\5.9.9\MSVC2015_64\include\QtANGLE;..\..\QT\5.9.9\MSVC2015_64\include\QtCore;release;.;..\..\QT\5.9.9\MSVC2015_64\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>release\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <DisableSpecificWarnings>4577;4467;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>release\</ObjectFileName>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;QT_DEPRECATED_WARNINGS;QT_NO_DEBUG;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <ProgramDataBaseFileName>
+      </ProgramDataBaseFileName>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>D:\QT\5.9.9\MSVC2015_64\lib\qtmain.lib;shell32.lib;D:\QT\5.9.9\MSVC2015_64\lib\Qt5Widgets.lib;D:\QT\5.9.9\MSVC2015_64\lib\Qt5Gui.lib;D:\QT\5.9.9\MSVC2015_64\lib\Qt5Core.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:\QT\5.9.9\MSVC2015_64\lib;C:\openssl\lib;C:\Utils\my_sql\my_sql\lib;C:\Utils\postgresql\pgsql\lib;$(QTDIR)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>"/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <LinkIncremental>false</LinkIncremental>
+      <OutputFile>$(OutDir)\Table.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;QT_DEPRECATED_WARNINGS;QT_NO_DEBUG;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;..\..\QT\5.9.9\MSVC2015_64\include;..\..\QT\5.9.9\MSVC2015_64\include\QtWidgets;..\..\QT\5.9.9\MSVC2015_64\include\QtGui;..\..\QT\5.9.9\MSVC2015_64\include\QtANGLE;..\..\QT\5.9.9\MSVC2015_64\include\QtCore;debug;.;..\..\QT\5.9.9\MSVC2015_64\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>debug\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4577;4467;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>debug\</ObjectFileName>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;QT_DEPRECATED_WARNINGS;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>D:\QT\5.9.9\MSVC2015_64\lib\qtmaind.lib;shell32.lib;D:\QT\5.9.9\MSVC2015_64\lib\Qt5Widgetsd.lib;D:\QT\5.9.9\MSVC2015_64\lib\Qt5Guid.lib;D:\QT\5.9.9\MSVC2015_64\lib\Qt5Cored.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:\QT\5.9.9\MSVC2015_64\lib;C:\openssl\lib;C:\Utils\my_sql\my_sql\lib;C:\Utils\postgresql\pgsql\lib;$(QTDIR)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>" /machine:X64 /debug " %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <OutputFile>$(OutDir)\Table.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;QT_DEPRECATED_WARNINGS;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|X64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;..\..\QT\5.9.9\MSVC2015_64\include;..\..\QT\5.9.9\MSVC2015_64\include\QtWidgets;..\..\QT\5.9.9\MSVC2015_64\include\QtGui;..\..\QT\5.9.9\MSVC2015_64\include\QtANGLE;..\..\QT\5.9.9\MSVC2015_64\include\QtCore;debug;.;..\..\QT\5.9.9\MSVC2015_64\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>debug\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4577;4467;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>debug\</ObjectFileName>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;QT_DEPRECATED_WARNINGS;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>D:\QT\5.9.9\MSVC2015_64\lib\qtmaind.lib;shell32.lib;D:\QT\5.9.9\MSVC2015_64\lib\Qt5Widgetsd.lib;D:\QT\5.9.9\MSVC2015_64\lib\Qt5Guid.lib;D:\QT\5.9.9\MSVC2015_64\lib\Qt5Cored.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:\QT\5.9.9\MSVC2015_64\lib;C:\openssl\lib;C:\Utils\my_sql\my_sql\lib;C:\Utils\postgresql\pgsql\lib;$(QTDIR)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>"/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <OutputFile>$(OutDir)\Table.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;QT_DEPRECATED_WARNINGS;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="mainwindow.cpp" />
+    <ClCompile Include="数据的加载与保存.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="mainwindow.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">mainwindow.h;release\moc_predefs.h;D:\QT\5.9.9\MSVC2015_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|X64'">mainwindow.h;release\moc_predefs.h;D:\QT\5.9.9\MSVC2015_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\QT\5.9.9\MSVC2015_64\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -DQT_DEPRECATED_WARNINGS -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include release/moc_predefs.h -ID:/QT/5.9.9/MSVC2015_64/mkspecs/win32-msvc -I"D:/QT_project/Table - ??" -ID:/QT/5.9.9/MSVC2015_64/include -ID:/QT/5.9.9/MSVC2015_64/include/QtWidgets -ID:/QT/5.9.9/MSVC2015_64/include/QtGui -ID:/QT/5.9.9/MSVC2015_64/include/QtANGLE -ID:/QT/5.9.9/MSVC2015_64/include/QtCore -I"C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\INCLUDE" -I"C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\ATLMFC\INCLUDE" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt" -I"C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt" mainwindow.h -o release\moc_mainwindow.cpp</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|X64'">D:\QT\5.9.9\MSVC2015_64\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -DQT_DEPRECATED_WARNINGS -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include release/moc_predefs.h -ID:/QT/5.9.9/MSVC2015_64/mkspecs/win32-msvc -I"D:/QT_project/Table - ??" -ID:/QT/5.9.9/MSVC2015_64/include -ID:/QT/5.9.9/MSVC2015_64/include/QtWidgets -ID:/QT/5.9.9/MSVC2015_64/include/QtGui -ID:/QT/5.9.9/MSVC2015_64/include/QtANGLE -ID:/QT/5.9.9/MSVC2015_64/include/QtCore -I"C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\INCLUDE" -I"C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\ATLMFC\INCLUDE" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt" -I"C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt" mainwindow.h -o release\moc_mainwindow.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MOC mainwindow.h</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|X64'">MOC mainwindow.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">release\moc_mainwindow.cpp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|X64'">release\moc_mainwindow.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">mainwindow.h;debug\moc_predefs.h;D:\QT\5.9.9\MSVC2015_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|X64'">mainwindow.h;debug\moc_predefs.h;D:\QT\5.9.9\MSVC2015_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\QT\5.9.9\MSVC2015_64\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -DQT_DEPRECATED_WARNINGS -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include debug/moc_predefs.h -ID:/QT/5.9.9/MSVC2015_64/mkspecs/win32-msvc -I"D:/QT_project/Table - ??" -ID:/QT/5.9.9/MSVC2015_64/include -ID:/QT/5.9.9/MSVC2015_64/include/QtWidgets -ID:/QT/5.9.9/MSVC2015_64/include/QtGui -ID:/QT/5.9.9/MSVC2015_64/include/QtANGLE -ID:/QT/5.9.9/MSVC2015_64/include/QtCore -I"C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\INCLUDE" -I"C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\ATLMFC\INCLUDE" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt" -I"C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt" mainwindow.h -o debug\moc_mainwindow.cpp</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|X64'">D:\QT\5.9.9\MSVC2015_64\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -DQT_DEPRECATED_WARNINGS -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include debug/moc_predefs.h -ID:/QT/5.9.9/MSVC2015_64/mkspecs/win32-msvc -I"D:/QT_project/Table - ??" -ID:/QT/5.9.9/MSVC2015_64/include -ID:/QT/5.9.9/MSVC2015_64/include/QtWidgets -ID:/QT/5.9.9/MSVC2015_64/include/QtGui -ID:/QT/5.9.9/MSVC2015_64/include/QtANGLE -ID:/QT/5.9.9/MSVC2015_64/include/QtCore -I"C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\INCLUDE" -I"C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\ATLMFC\INCLUDE" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt" -I"C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt" mainwindow.h -o debug\moc_mainwindow.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MOC mainwindow.h</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|X64'">MOC mainwindow.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">debug\moc_mainwindow.cpp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|X64'">debug\moc_mainwindow.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="debug\moc_mainwindow.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|X64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_mainwindow.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|X64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <CustomBuild Include="debug\moc_predefs.h.cbt">
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|X64'">true</ExcludedFromBuild>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\QT\5.9.9\MSVC2015_64\mkspecs\features\data\dummy.cpp;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|X64'">..\..\QT\5.9.9\MSVC2015_64\mkspecs\features\data\dummy.cpp;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cl -Bx"$(QTDIR)\bin\qmake.exe" -nologo -Zc:wchar_t -FS -Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zi -MDd -W3 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 -wd4577 -wd4467 -E ..\..\QT\5.9.9\MSVC2015_64\mkspecs\features\data\dummy.cpp 2&gt;NUL &gt;debug\moc_predefs.h</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|X64'">cl -Bx"$(QTDIR)\bin\qmake.exe" -nologo -Zc:wchar_t -FS -Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zi -MDd -W3 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 -wd4577 -wd4467 -E ..\..\QT\5.9.9\MSVC2015_64\mkspecs\features\data\dummy.cpp 2&gt;NUL &gt;debug\moc_predefs.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generate moc_predefs.h</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|X64'">Generate moc_predefs.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">debug\moc_predefs.h;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|X64'">debug\moc_predefs.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="release\moc_predefs.h.cbt">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\QT\5.9.9\MSVC2015_64\mkspecs\features\data\dummy.cpp;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|X64'">..\..\QT\5.9.9\MSVC2015_64\mkspecs\features\data\dummy.cpp;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">cl -Bx"$(QTDIR)\bin\qmake.exe" -nologo -Zc:wchar_t -FS -Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -O2 -MD -W3 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 -wd4577 -wd4467 -E ..\..\QT\5.9.9\MSVC2015_64\mkspecs\features\data\dummy.cpp 2&gt;NUL &gt;release\moc_predefs.h</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|X64'">cl -Bx"$(QTDIR)\bin\qmake.exe" -nologo -Zc:wchar_t -FS -Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -O2 -MD -W3 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 -wd4577 -wd4467 -E ..\..\QT\5.9.9\MSVC2015_64\mkspecs\features\data\dummy.cpp 2&gt;NUL &gt;release\moc_predefs.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generate moc_predefs.h</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|X64'">Generate moc_predefs.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">release\moc_predefs.h;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|X64'">release\moc_predefs.h;%(Outputs)</Outputs>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|X64'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <ClCompile Include="debug\qrc_images.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|X64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\qrc_images.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|X64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClInclude Include="head.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="ui_mainwindow.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="mainwindow.ui">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">mainwindow.ui;D:\QT\5.9.9\MSVC2015_64\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|X64'">mainwindow.ui;D:\QT\5.9.9\MSVC2015_64\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\QT\5.9.9\MSVC2015_64\bin\uic.exe mainwindow.ui -o ui_mainwindow.h</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|X64'">D:\QT\5.9.9\MSVC2015_64\bin\uic.exe mainwindow.ui -o ui_mainwindow.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">UIC mainwindow.ui</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|X64'">UIC mainwindow.ui</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">ui_mainwindow.h;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|X64'">ui_mainwindow.h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">mainwindow.ui;D:\QT\5.9.9\MSVC2015_64\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|X64'">mainwindow.ui;D:\QT\5.9.9\MSVC2015_64\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\QT\5.9.9\MSVC2015_64\bin\uic.exe mainwindow.ui -o ui_mainwindow.h</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|X64'">D:\QT\5.9.9\MSVC2015_64\bin\uic.exe mainwindow.ui -o ui_mainwindow.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">UIC mainwindow.ui</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|X64'">UIC mainwindow.ui</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ui_mainwindow.h;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|X64'">ui_mainwindow.h;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\00.JPG" />
+    <None Include="images\103.bmp" />
+    <None Include="images\107.bmp" />
+    <None Include="images\124.bmp" />
+    <None Include="images\300.bmp" />
+    <None Include="images\304.bmp" />
+    <None Include="images\306.bmp" />
+    <None Include="images\308.bmp" />
+    <None Include="images\310.bmp" />
+    <None Include="images\312.bmp" />
+    <None Include="images\314.bmp" />
+    <None Include="images\316.bmp" />
+    <None Include="images\318.bmp" />
+    <None Include="images\320.bmp" />
+    <None Include="images\322.bmp" />
+    <None Include="images\324.bmp" />
+    <None Include="images\326.bmp" />
+    <None Include="images\delete1.bmp" />
+    <None Include="images\delfold1.bmp" />
+    <None Include="images\exit.bmp" />
+    <CustomBuild Include="images.qrc">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">images.qrc;D:\QT\5.9.9\MSVC2015_64\bin\rcc.exe;images\save1.bmp;images\320.bmp;images\322.bmp;images\delfold1.bmp;images\324.bmp;images\delete1.bmp;images\open3.bmp;images\up.bmp;images\326.bmp;images\124.bmp;images\310.bmp;images\exit.bmp;images\312.bmp;images\314.bmp;images\300.bmp;images\316.bmp;images\318.bmp;images\304.bmp;images\103.bmp;images\306.bmp;images\ubdo.bmp;images\308.bmp;images\107.bmp;images\00.JPG;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|X64'">images.qrc;D:\QT\5.9.9\MSVC2015_64\bin\rcc.exe;images\save1.bmp;images\320.bmp;images\322.bmp;images\delfold1.bmp;images\324.bmp;images\delete1.bmp;images\open3.bmp;images\up.bmp;images\326.bmp;images\124.bmp;images\310.bmp;images\exit.bmp;images\312.bmp;images\314.bmp;images\300.bmp;images\316.bmp;images\318.bmp;images\304.bmp;images\103.bmp;images\306.bmp;images\ubdo.bmp;images\308.bmp;images\107.bmp;images\00.JPG;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\QT\5.9.9\MSVC2015_64\bin\rcc.exe -name images images.qrc -o release\qrc_images.cpp</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|X64'">D:\QT\5.9.9\MSVC2015_64\bin\rcc.exe -name images images.qrc -o release\qrc_images.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">RCC images.qrc</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|X64'">RCC images.qrc</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">release\qrc_images.cpp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|X64'">release\qrc_images.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">images.qrc;D:\QT\5.9.9\MSVC2015_64\bin\rcc.exe;images\save1.bmp;images\320.bmp;images\322.bmp;images\delfold1.bmp;images\324.bmp;images\delete1.bmp;images\open3.bmp;images\up.bmp;images\326.bmp;images\124.bmp;images\310.bmp;images\exit.bmp;images\312.bmp;images\314.bmp;images\300.bmp;images\316.bmp;images\318.bmp;images\304.bmp;images\103.bmp;images\306.bmp;images\ubdo.bmp;images\308.bmp;images\107.bmp;images\00.JPG;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|X64'">images.qrc;D:\QT\5.9.9\MSVC2015_64\bin\rcc.exe;images\save1.bmp;images\320.bmp;images\322.bmp;images\delfold1.bmp;images\324.bmp;images\delete1.bmp;images\open3.bmp;images\up.bmp;images\326.bmp;images\124.bmp;images\310.bmp;images\exit.bmp;images\312.bmp;images\314.bmp;images\300.bmp;images\316.bmp;images\318.bmp;images\304.bmp;images\103.bmp;images\306.bmp;images\ubdo.bmp;images\308.bmp;images\107.bmp;images\00.JPG;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\QT\5.9.9\MSVC2015_64\bin\rcc.exe -name images images.qrc -o debug\qrc_images.cpp</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|X64'">D:\QT\5.9.9\MSVC2015_64\bin\rcc.exe -name images images.qrc -o debug\qrc_images.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">RCC images.qrc</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|X64'">RCC images.qrc</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">debug\qrc_images.cpp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|X64'">debug\qrc_images.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <None Include="images\open3.bmp" />
+    <None Include="images\save1.bmp" />
+    <None Include="images\ubdo.bmp" />
+    <None Include="images\up.bmp" />
+    <None Include="stylesheet.qss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="images\edit.png" />
+    <Image Include="images\logo.ico" />
+    <Image Include="images\title.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Table.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

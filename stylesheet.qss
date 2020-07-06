@@ -1,0 +1,17 @@
+QTableView{
+    background-color: rgb(255, 255, 255);
+    alternate-background-color: rgb(211, 211, 211);
+	selection-color: white;                             /*选中区域的文字颜色*/
+    selection-background-color: rgb(255, 106, 106);        /*选中区域的背景色*/
+}
+QHeaderView {
+    color: rgb(0, 0, 0);
+    font: bold 10pt;
+    background-color: white;/*设置表头空白区域背景色*/
+    border: 0px solid rgb(144, 144, 144);
+    border:0px solid rgb(191,191,191);
+    border-left-color: rgb(119, 136, 153);
+    border-top-color: rgba(255, 255, 255, 0);
+    border-radius:0px;
+    min-height:29px;
+}

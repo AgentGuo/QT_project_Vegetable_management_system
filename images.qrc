@@ -1,0 +1,38 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/00.JPG</file>
+        <file>images/103.bmp</file>
+        <file>images/107.bmp</file>
+        <file>images/124.bmp</file>
+        <file>images/300.bmp</file>
+        <file>images/304.bmp</file>
+        <file>images/306.bmp</file>
+        <file>images/308.bmp</file>
+        <file>images/310.bmp</file>
+        <file>images/312.bmp</file>
+        <file>images/314.bmp</file>
+        <file>images/316.bmp</file>
+        <file>images/318.bmp</file>
+        <file>images/320.bmp</file>
+        <file>images/322.bmp</file>
+        <file>images/324.bmp</file>
+        <file>images/326.bmp</file>
+        <file>images/delete1.bmp</file>
+        <file>images/delfold1.bmp</file>
+        <file>images/exit.bmp</file>
+        <file>images/open3.bmp</file>
+        <file>images/save1.bmp</file>
+        <file>images/ubdo.bmp</file>
+        <file>images/up.bmp</file>
+        <file>images/info.png</file>
+        <file>images/kind.png</file>
+        <file>images/output.png</file>
+        <file>images/edit.png</file>
+        <file>images/save.png</file>
+        <file>stylesheet.qss</file>
+        <file>images/chart.png</file>
+        <file>images/table.png</file>
+        <file>images/title.png</file>
+        <file>images/export.png</file>
+    </qresource>
+</RCC>

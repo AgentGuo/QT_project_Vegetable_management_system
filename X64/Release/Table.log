@@ -1,0 +1,8 @@
+﻿  mainwindow.cpp
+mainwindow.cpp(280): warning C4100: “a”: 未引用的形参
+mainwindow.cpp(291): warning C4100: “a”: 未引用的形参
+mainwindow.cpp(299): warning C4100: “a”: 未引用的形参
+mainwindow.cpp(384): warning C4100: “pos”: 未引用的形参
+  数据的加载与保存.c
+数据的加载与保存.c(1191): warning C4101: “TempChar”: 未引用的局部变量
+  Table.vcxproj -> D:\QT_project\Table - 副本\X64\Release\Table.exe
